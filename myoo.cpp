@@ -15,7 +15,7 @@
 #include <fstream>
 #include <time.h>
 
-#include <myo/myo.hpp>
+#include <myo.hpp>
 
 class DataCollector : public myo::DeviceListener {
 public:
