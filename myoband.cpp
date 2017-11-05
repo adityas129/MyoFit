@@ -11,16 +11,26 @@ int main(){
 
   string timestamp;
   string roll;
+  int size = 0;
 
 
-  while(ip.good()){
+
+    while(ip.good()){
+    size++;
 
     getline(ip,timestamp,',');
     getline(ip,roll,',');
 
+
     cout << "Timestamp: "<<timestamp<< " "<<timestamp << '\n';
     cout << "Pushups: "<<roll << '\n';
+
   }
+  char * timestamparray[size];
+  char * rollarray[size];
+
 
   ip.close();
+
+
 }
