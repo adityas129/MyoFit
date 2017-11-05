@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 
-  ifstream ip("data.csv");
+  ifstream ip("orientationEuler-1509784830 - 5.csv");
 
   if(!ip.is_open()) std::cout << "ERROR: File Open" << '\n';
 
@@ -18,7 +18,7 @@ int main(){
     getline(ip,timestamp,',');
     getline(ip,roll,',');
 
-    cout << "Timestamp: "<<timestamp<< " "<<lastname << '\n';
+    cout << "Timestamp: "<<timestamp<< " "<<timestamp << '\n';
     cout << "Pushups: "<<roll << '\n';
   }
 
