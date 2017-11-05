@@ -1,53 +1,39 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
 int main(){
 
-
-  ifstream ip("orientationEuler-1509784830 - 5.csv");
-
-  try
- {
-   throw 0;
- }
- catch (int e)
- {
-   cout << "An exception occurred. Exception Nr. " << 0 << '\n';
- }
-
-  if(!ip.is_open()) std::cout << "ERROR: File Open" << '\n';
-
-  string timestamp;
-  string roll;
-  int size = 0;
+    ifstream ip("orientationEuler-1509784830 - 5.csv");
 
 
 
+    int count;
+    ip >> count;
+    cout << count ;
+    cout << count;
+    string roll;
+    int number_of_lines = 0;
 
 
-    while(ip.good()){
-    size++;
-
-    getline(ip,timestamp,',');
-    getline(ip,roll,',');
+    if(!ip.is_open()) std::cout << "ERROR: File Open" << '\n';
 
 
-    //cout << "Timestamp: "<<timestamp<< " "<<timestamp << '\n';
-  //  cout << "Pushups: "<<roll << '\n';
+    while (ip.good()){
+      getline(ip, roll,',');
+      cout << roll;
+      number_of_lines ++;
 
+    }
+
+
+
+
+    int total_number = number_of_lines - 1;
+    float arrayofrolls[total_number];
+
+
+    ip.close();
   }
-  char ** timestamparray;
-  char ** rollarray;
-  for (int i = 0; i < size; i++){
-    rollarray[i] = &roll[i];
-
-    cout  <<  & rollarray[i];
-  }
-
-
-  ip.close();
-
-
-}
