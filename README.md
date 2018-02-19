@@ -4,7 +4,7 @@ https://devpost.com/software/myovision
 
 
 
-# Inspiration:
+# Inspiration
 The human mind has never been put under greater pressure before. With the advent of internet bringing onto a new era connectivity allowing us to access the world at our fingertips, it has also made us less physical. Studies after studies have gone on to provide evidence on the detrimental effects of lack of exercise on physical and mental health. Asking all medical specialists - physical fitness remains one of the best ways to prevent and improve the human mental condition. That's why we created MyoVision, to provide a tool for everyone that might need that helping hand, but might be unable to afford an expensive personal fitness trainer.
 
 # What it does
